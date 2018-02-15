@@ -75,8 +75,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 					<div class="form-element-wrapper">
 						<select name="form_text_36" value="<?=$arResult["arrVALUES"]["form_text_36"]?>" data-jcf="{&quot;fakeDropInBody&quot;: false}" data-bval="ctype" class="form-element form-element--select form-element--bold">
 							<option <?= $arResult["arrVALUES"]["form_text_36"] == 'Документы' ? 'selected' : '';?>  value="Документы">Документы</option>
-							<option <?= $arResult["arrVALUES"]["form_text_36"] == 'Корреспонденция' ? 'selected' : '';?> value="Корреспонденция">Корреспонденция</option>
-							<option <?= $arResult["arrVALUES"]["form_text_36"] == 'Другое' ? 'selected' : '';?> value="Другое">Другое</option>
+							<option <?= ($arResult["arrVALUES"]["form_text_36"] == '' || $arResult["arrVALUES"]["form_text_36"] == 'Груз') ? 'selected' : '';?> value="Груз">Груз</option>
 						</select>
 					</div>
 				</div>
